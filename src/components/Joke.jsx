@@ -9,7 +9,7 @@ function Joke({ setup, Punchline }) {
   return (
     <div>
       {setup && <h4>{setup}</h4>}
-      {isShown == true && <p> {Punchline}</p>}
+      {isShown && <p> {Punchline}</p>}
       <button onClick={toggleShown}>Show Punchline</button>
       <hr />
     </div>
